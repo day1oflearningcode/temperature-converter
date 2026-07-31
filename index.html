@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="converter">
+        <section class="panel panel--form">
+            <div>
+                <h1>Enter Temperature</h1>
+                <div class="input-group">
+                    <label class="label" for="degree-input">Degree</label>
+                    <input id="degree-input" type="number" step="any" value="0" placeholder="0">
+
+                    <label class="label" for="source-unit">From</label>
+                    <select id="source-unit">
+                        <option value="c">Celsius (°C)</option>
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+
+                    <label class="label" for="target-unit">Convert In</label>
+                    <select id="target-unit">
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="c">Celsius (°C)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convert-button" type="button">Convert →</button>
+        </section>
+
+        <section class="panel panel--result">
+            <div class="panel--result-inner">
+                <p class="result-value">32</p>
+                <span class="result-unit">°F</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
